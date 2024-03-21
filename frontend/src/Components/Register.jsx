@@ -14,8 +14,8 @@ const Register = () => {
          const res = await axios.post('http://localhost:5000/api/user/register',{
           name,email,password,answer
          })
-          console.log(res.data);
-         if(res.data.success){
+          // console.log(res.data);
+         if(res?.data?.success){
           navigate("/login");
          }else{
           alert("error in register ");
