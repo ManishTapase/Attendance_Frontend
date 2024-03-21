@@ -1,16 +1,18 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "./authContext";
-
+import { useNavigate } from "react-router-dom";
+import 
 const Header = () => {
   const [auth, setAuth] = useAuth();
+  const navigate = useNavigate();
   const handelLogOut = () => {
     setAuth({
       user: null,
       token:"",
     });
     localStorage.removeItem("user");
-    window.location.href = "/login";
+    navigate("/");
   };
   return (
     <>
@@ -25,7 +27,7 @@ const Header = () => {
       >
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a style={{ fontSize: "1.5em", fontWeight: "bold" }}>ATTEND</a>
+            <a style={{ fontSize: "1.5em", fontWeight: "bold" }} href="/" >ATTEND</a>
             <button
               className="navbar-toggler"
               type="button"
