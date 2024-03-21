@@ -13,7 +13,7 @@ const Login = () => {
           email,password
          })
           // console.log(res.data);
-         if(res.data.success){
+         if(res?.data?.success){
           navigate("/");
           window.location.href = "/";
           localStorage.setItem("user",JSON.stringify(res.data));
