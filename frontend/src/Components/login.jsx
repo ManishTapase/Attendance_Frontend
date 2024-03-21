@@ -9,7 +9,7 @@ const Login = () => {
     const HandelSubmit = async(e)=>{
        e.preventDefault();
        try{
-         const res = await axios.post('http://localhost:5000/api/user/login',{
+         const res = await axios.post('/api/user/login',{
           email,password
          })
           console.log(res.data);
