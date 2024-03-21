@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "./authContext";
 import { useNavigate } from "react-router-dom";
-import 
 const Header = () => {
   const [auth, setAuth] = useAuth();
   const navigate = useNavigate();
