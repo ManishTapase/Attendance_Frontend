@@ -21,7 +21,7 @@ const Login = () => {
           alert("error in login ");
          }
        } catch (error) {
-          alert("somthing went wrong....!",error);
+          alert("somthing went wrong while login in....!",error);
        }    
  }
   return (
