@@ -1,0 +1,162 @@
+#sec{
+    display: flex;
+    position: relative;
+    top: 7vh;
+    flex-flow: column;
+    border: 1px solid #75787ebe;
+    height: 100vh;
+    width: 100%;
+}
+#frm {
+  height:max-content;
+  width: 80%;
+  border: 1px solid #75787ebe;
+  position: relative;
+  border-radius: 5px;
+  top: 7vh;
+  left: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 2px 2px 10px 2px #75787ebe;
+}
+#inp {
+  width: 10em;
+  height: 2em;
+  border: 1px solid #75787ebe;
+  border-radius: 10px;
+  font-family: Ubuntu;
+  position: relative;
+  top: 1vh;
+  left: 4vw;
+  padding: 10px;
+  color: #6947da;
+}
+
+#drp {
+  border: 1px solid #75787ebe;
+  width: 10em;
+  height: 2em;
+  align-content: center;
+  border-radius: 5px;
+  position: relative;
+  left: 8vw;
+  padding-left: 4vw;
+}
+#sbmt {
+  position: relative;
+  left: 10vw;
+  border: 0px;
+  border-radius: 5px;
+  font-family: Ubuntu;
+  background: green;
+  color: white;
+}
+
+#edt {
+  position: relative;
+  left: 13vw;
+  border: 0px;
+  border-radius: 5px;
+  font-family: Ubuntu;
+  background: green;
+  color: white;
+}
+
+#clndrpos {
+  position: relative;
+  left: 30vw;
+  top: 15vh;
+  width: max-content;
+}
+
+#shw{
+    position: relative;
+    left: 15vw;
+    display: flex;
+}
+@media only screen and (min-width: 375px) and (max-width: 900px) {
+  .body {
+    overflow-x: hidden;
+    display: block !important ;
+  }
+  #clndrpos {
+    position: relative;
+    left:10vw;
+    top:10vh;
+    width:80vw;
+  }
+  #frm {
+    height: 30vh;
+    width: 80%;
+    position: relative;
+    top: 7vh;
+    left: 10vw;
+    box-shadow: 2px 2px 10px 2px #75787ebe;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-content:space-around;
+  }
+  #drp {
+    border: 1px solid #75787ebe;
+    width:15em;
+    height: 2em;
+    align-content: center;
+    border-radius: 10px;
+    position: relative;
+    left:2vw;
+    padding-left: 4vw;
+  }
+  #inp {
+    width:15em;
+    height: 2em;
+    border: 1px solid #75787ebe;
+    border-radius: 10px;
+    font-family: poppins;
+    position: relative;
+    top: 1vh;
+    left: 2vw;
+    padding: 10px;
+    color: #6947da;
+  }
+  #sbmt {
+    width:15em;
+    height: 2em;
+    border: 1px solid #75787ebe;
+    position: relative;
+    top:1vh;
+    left: 2vw;
+    border: 0px;
+    border-radius: 5px;
+    font-family: Ubuntu;
+    background: green;
+    color: white;
+  }
+  
+  #edt {
+    width:15em;
+    height: 2em;
+    position: relative;
+    left: 2vw;
+    top:2vh;
+    border: 0px;
+    border-radius: 5px;
+    font-family: Ubuntu;
+    background: green;
+    color: white;
+  }
+  #sec{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    top: 2vh;
+}
+#shw{
+    position: relative;
+    top: 2.5vh;
+    left: 5vw;
+    display: flex;
+}
+}
